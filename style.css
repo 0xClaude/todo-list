@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  padding: 5% 0 1%;
+  text-align: center;
+}
+
+.list {
+  background-color: #EEEEEE;
+  border-radius: 12px;
+  margin: 0 35%;
+  padding: 5%;
+  width: 30%;
+}
+
+
+input[type="checkbox"]:checked+span {
+  text-decoration: line-through;
+  color: #CCC;
+}
