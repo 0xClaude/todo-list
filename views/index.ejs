@@ -15,9 +15,21 @@
 
   <div class="list">
     <ul class="list-group shoppingList">
-
+    <%
+      for (item in list) {
+        %>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+        <span>
+          <%= list[item] %>
+        </span>
+      </li>
+    <%
+    }
+    %>
       <li class="list-group addItem">
-        <input type="text" name="newItem" value="" class="form-control" autocomplete="off"> <button type="button" name="addItem" class="btn btn-primary">Add!</button>
+          <input type="text" name="newItem" value="" class="form-control" autocomplete="off">
+          <button type="button" name="addItem" class="btn btn-primary">Add!</button>
       </li>
     </ul>
 
@@ -27,4 +39,4 @@
 
 </body>
 
-</html>
+<
